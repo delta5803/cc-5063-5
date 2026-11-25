@@ -30,10 +30,48 @@
           <section class="card">
             <div class="card-title-row">
               <h2>明确的截面顺序</h2>
-              <button id="reverse-order" class="mini" type="button">反转次序</button>
+              <div class="btn-row">
+                <button id="undo-edit" class="mini secondary" type="button">撤销编辑</button>
+                <button id="reverse-order" class="mini" type="button">反转次序</button>
+              </div>
             </div>
             <ol id="section-order" class="section-order"></ol>
             <button id="insert-symmetric" class="secondary full" type="button">在中点插入二重对称截面</button>
+          </section>
+
+          <section class="card" id="correspondence-card">
+            <h2>截面起点 / 方向对应</h2>
+            <p id="corr-selected" class="muted" style="margin-top:0">点击截面行的“对”或视口中的起点球后，可拖动黄色起点球、调整起点相位并切换方向。</p>
+            <label class="slider-row">
+              <span>起点 canonical U <b id="corr-start-value">—</b></span>
+              <input id="corr-start" type="range" min="0" max="0.999" step="0.001" value="0" disabled />
+            </label>
+            <label class="check-line"><input id="corr-reverse" type="checkbox" disabled /> 反向该截面参数方向</label>
+            <div class="btn-row">
+              <button id="corr-reset" class="mini secondary" type="button" disabled>对齐记号/解锁</button>
+            </div>
+            <p id="corr-reason" class="reason"></p>
+          </section>
+
+          <section class="card">
+            <h2>扭转来源诊断 / 复跑</h2>
+            <div class="btn-row wrap">
+              <select id="diagnostic-case-select" aria-label="诊断样例">
+                <option value="correspondence">中间错对应打结</option>
+                <option value="opposite-direction">异向截面直连</option>
+                <option value="frame">标架翻面</option>
+                <option value="spacing">不均匀间距波动</option>
+                <option value="stale-undo">撤销后迟到旧标架</option>
+              </select>
+              <button id="load-diagnostic-case" class="mini" type="button">载入诊断样例</button>
+              <button id="run-diagnosis" class="mini secondary" type="button">完整复跑</button>
+              <button id="simulate-stale-frame" class="mini secondary" type="button">模拟迟到标架</button>
+            </div>
+            <div id="twist-diagnosis" class="diagnosis"></div>
+            <details class="evidence-details">
+              <summary>执行证据 / 可重放参数</summary>
+              <pre id="diagnostic-json" class="json"></pre>
+            </details>
           </section>
 
           <section class="card">
@@ -71,7 +109,7 @@
 
         <section class="viewport card">
           <div id="three-container"></div>
-          <div class="viewport-hint">拖拽旋转 · 滚轮缩放 · 右键平移</div>
+          <div class="viewport-hint">拖拽黄色起点球修改对应 · 空白处拖拽旋转 · 滚轮缩放 · 右键平移</div>
           <div id="viewer-message" class="viewer-message"></div>
           <div id="viewer-badges" class="badges"></div>
         </section>

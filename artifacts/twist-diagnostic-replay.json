@@ -1,0 +1,1372 @@
+{
+  "schema": "loft-twist-diagnostic-run/v1",
+  "generatedAt": "2026-11-25T15:35:13.312Z",
+  "launch": {
+    "ui": "npm run dev",
+    "uiUrl": "http://127.0.0.1:5173/",
+    "checkUi": "npm run check:ui",
+    "note": "浏览器打开 Vite 地址；右侧“扭转来源诊断”可运行复跑，左侧可撤销/拖动截面并修改对应。"
+  },
+  "runs": [
+    {
+      "name": "preset:circle-ellipse",
+      "cause": "healthy",
+      "healthy": true,
+      "localization": null,
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "healthy-no-self-intersection",
+            "ok": true,
+            "detail": "自交数 0"
+          },
+          {
+            "id": "healthy-no-correspondence-false-report",
+            "ok": true,
+            "detail": "最大锁点残差 0"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 3,
+        "maxEntries": 160,
+        "estimatedBytes": 446
+      }
+    },
+    {
+      "name": "preset:eccentric",
+      "cause": "healthy",
+      "healthy": true,
+      "localization": null,
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "healthy-no-self-intersection",
+            "ok": true,
+            "detail": "自交数 0"
+          },
+          {
+            "id": "healthy-no-correspondence-false-report",
+            "ok": true,
+            "detail": "最大锁点残差 0"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 3,
+        "maxEntries": 160,
+        "estimatedBytes": 446
+      }
+    },
+    {
+      "name": "preset:symmetric",
+      "cause": "healthy",
+      "healthy": true,
+      "localization": null,
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "healthy-no-self-intersection",
+            "ok": true,
+            "detail": "自交数 0"
+          },
+          {
+            "id": "healthy-no-correspondence-false-report",
+            "ok": true,
+            "detail": "最大锁点残差 0"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 3,
+        "maxEntries": 160,
+        "estimatedBytes": 446
+      }
+    },
+    {
+      "name": "preset:flipped-start",
+      "cause": "healthy",
+      "healthy": true,
+      "localization": null,
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "healthy-no-self-intersection",
+            "ok": true,
+            "detail": "自交数 0"
+          },
+          {
+            "id": "healthy-no-correspondence-false-report",
+            "ok": true,
+            "detail": "最大锁点残差 0"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 3,
+        "maxEntries": 160,
+        "estimatedBytes": 446
+      }
+    },
+    {
+      "name": "preset:reverse",
+      "cause": "healthy",
+      "healthy": true,
+      "localization": null,
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "healthy-no-self-intersection",
+            "ok": true,
+            "detail": "自交数 0"
+          },
+          {
+            "id": "healthy-no-correspondence-false-report",
+            "ok": true,
+            "detail": "最大锁点残差 0"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 3,
+        "maxEntries": 160,
+        "estimatedBytes": 446
+      }
+    },
+    {
+      "name": "scenario:middle-correspondence-knot",
+      "cause": "input-correspondence",
+      "healthy": false,
+      "localization": {
+        "sectionId": "KNOT",
+        "intervalIndex": 2,
+        "between": [
+          "KNOT",
+          "K3"
+        ]
+      },
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "correspondence-localized",
+            "ok": true,
+            "detail": "定位截面或区间"
+          },
+          {
+            "id": "lock-or-direction-evidence",
+            "ok": true,
+            "detail": "起点/方向/参数证据"
+          },
+          {
+            "id": "not-global-flip-mask",
+            "ok": true,
+            "detail": "不自动全局翻转"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 7,
+        "maxEntries": 160,
+        "estimatedBytes": 1303
+      }
+    },
+    {
+      "name": "scenario:opposite-direction",
+      "cause": "input-correspondence",
+      "healthy": false,
+      "localization": {
+        "sectionId": "KNOT",
+        "intervalIndex": 1,
+        "between": [
+          "K1",
+          "KNOT"
+        ]
+      },
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "correspondence-localized",
+            "ok": true,
+            "detail": "定位截面或区间"
+          },
+          {
+            "id": "lock-or-direction-evidence",
+            "ok": true,
+            "detail": "起点/方向/参数证据"
+          },
+          {
+            "id": "not-global-flip-mask",
+            "ok": true,
+            "detail": "不自动全局翻转"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 6,
+        "maxEntries": 160,
+        "estimatedBytes": 1127
+      }
+    },
+    {
+      "name": "scenario:middle-frame-flip",
+      "cause": "frame-flip",
+      "healthy": false,
+      "localization": {
+        "sectionId": "KNOT"
+      },
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "frame-diff-evidence",
+            "ok": true,
+            "detail": "冻结对应后重算标架检到翻面"
+          },
+          {
+            "id": "frame-replay-differential",
+            "ok": true,
+            "detail": "存在只替换标架重放"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 5,
+        "maxEntries": 160,
+        "estimatedBytes": 841
+      }
+    },
+    {
+      "name": "scenario:uneven-spacing",
+      "cause": "interpolation-ill-conditioning",
+      "healthy": false,
+      "localization": {
+        "intervalIndex": 3,
+        "between": [
+          "D3",
+          "D4"
+        ],
+        "denseIntervals": [
+          0,
+          2
+        ]
+      },
+      "verification": {
+        "verified": true,
+        "pending": false,
+        "status": "verified",
+        "checks": [
+          {
+            "id": "evidence-chain-present",
+            "ok": true,
+            "detail": "执行证据链包含归因或健康结论"
+          },
+          {
+            "id": "replay-parameters-saved",
+            "ok": true,
+            "detail": "保存可重放参数"
+          },
+          {
+            "id": "low-section-residual",
+            "ok": true,
+            "detail": "截面配点残差低"
+          },
+          {
+            "id": "spacing-or-wave-evidence",
+            "ok": true,
+            "detail": "间距/波度证据"
+          },
+          {
+            "id": "self-intersection-compared",
+            "ok": true,
+            "detail": "比较实体自交数"
+          },
+          {
+            "id": "assembly-line-compared",
+            "ok": true,
+            "detail": "比较原锁定装配线"
+          }
+        ],
+        "contradictions": []
+      },
+      "evidenceLogCost": {
+        "entryCount": 4,
+        "maxEntries": 160,
+        "estimatedBytes": 658
+      }
+    }
+  ],
+  "explicitReplayComparison": {
+    "pointOrderOnly": {
+      "selfIntersectionCount": 0,
+      "assemblyLine": {
+        "anchorU": 0.22,
+        "pointCount": 65,
+        "maxDrift": 1.0842065160655185,
+        "rmsDrift": 0.5653913981964285,
+        "samples": 65
+      },
+      "parameters": {
+        "mode": "point-order-only",
+        "candidateId": "locked",
+        "uControlCount": 48,
+        "pointOrderEdits": {
+          "KNOT": {
+            "shift": 10
+          }
+        }
+      }
+    },
+    "frameOnly": {
+      "selfIntersectionCount": 400,
+      "assemblyLine": {
+        "anchorU": 0.22,
+        "pointCount": 65,
+        "maxDrift": 0,
+        "rmsDrift": 0,
+        "samples": 65
+      },
+      "parameters": {
+        "mode": "frame-only",
+        "candidateId": "locked",
+        "uControlCount": 48,
+        "frameCorrections": {
+          "KNOT": {
+            "angle": 3.141592653589793,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  },
+  "staleUndo": {
+    "staleCheck": {
+      "current": false,
+      "fresh": false,
+      "stale": true,
+      "valid": false,
+      "code": "RESULT_DEPENDENCY_SECTION_MISSING",
+      "reasonCode": "SECTION_NO_LONGER_EXISTS",
+      "missingSectionIds": [
+        "UNDO-NEW-SECTION"
+      ],
+      "requiredSectionIds": [
+        "U0",
+        "U1",
+        "UNDO-NEW-SECTION",
+        "U3",
+        "U4"
+      ],
+      "message": "结果依赖的截面 UNDO-NEW-SECTION 已不存在（可能已被撤销或删除）；该旧标架或放样结果不得继续驱动视图。"
+    },
+    "lateAccept": {
+      "accepted": false,
+      "code": "RESULT_DEPENDENCY_SECTION_MISSING"
+    }
+  },
+  "logCostStress": {
+    "entryCount": 48,
+    "maxEntries": 48,
+    "estimatedBytes": 4551
+  },
+  "records": {
+    "correspondence": {
+      "schema": "loft-twist-diagnostic-replay/v1",
+      "createdAt": "deterministic-record",
+      "diagnosisCause": "input-correspondence",
+      "replayStatus": "complete",
+      "diagnosisParameters": {
+        "presetId": "middle-correspondence-knot",
+        "candidateId": "custom-correspondence",
+        "orderedIds": [
+          "K0",
+          "K1",
+          "KNOT",
+          "K3",
+          "K4"
+        ],
+        "anchorU": 0.22,
+        "uControlCount": 64,
+        "traceSamples": 72,
+        "replayUControlCount": 40,
+        "thresholds": {
+          "lockTolerance": 0.05,
+          "strongLockMultiple": 2.2,
+          "twistWarn": 0.55,
+          "wave": 0.08
+        },
+        "frameCorrections": {
+          "KNOT": {
+            "angle": -2.7167323306081275,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "pointOrderEdits": {},
+        "vParameters": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "historyRevision": null,
+        "taskId": null,
+        "globalFlipApplied": false,
+        "scenario": "correspondence",
+        "correspondenceOverrides": {
+          "KNOT": {
+            "orientation": 1,
+            "offset": 0.26910729658654486,
+            "reason": "dragged-start-parameter-correspondence"
+          }
+        }
+      },
+      "costs": {
+        "rebuildBySection": {
+          "implementation": "rebuild-correspondence-by-section",
+          "estimatedOperations": 16800,
+          "elapsedMs": 0.001
+        },
+        "trackFrameFlips": {
+          "implementation": "locked-alignment-track-frame-flip",
+          "estimatedOperations": 1392,
+          "elapsedMs": 0.337
+        },
+        "ratio": 12.068965517241379,
+        "selectedImplementation": "rebuild-correspondence-by-section",
+        "reason": "锁住对齐残差不合格，不能安全冻结；需要按截面重建起点、方向和参数对应。"
+      },
+      "traceSummary": {
+        "totals": {
+          "maxLockResidualU": 0.41999999999999993,
+          "rmsLockResidualU": 0.1878297101099823,
+          "maxTwist": 2.5483004614551366,
+          "maxFrameTwistDegrees": 146.5574714941644,
+          "maxCorrespondenceResidual": 1.9111647454509393,
+          "maxParameterResidual": 0,
+          "parameterResidual": 0,
+          "orientationChanges": 0
+        },
+        "maxTwistIndex": 2,
+        "maxLockIndex": 2,
+        "maxWaveIndex": 0
+      },
+      "replays": {
+        "baseline": {
+          "mode": "baseline",
+          "parameters": {
+            "mode": "baseline",
+            "candidateId": "custom-correspondence",
+            "uControlCount": 40
+          },
+          "sectionIds": [
+            "K0",
+            "K1",
+            "KNOT",
+            "K3",
+            "K4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 0.000019015304738166027,
+            "rmsDrift": 0.000010035160118653487,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "frameOnly": {
+          "mode": "frame-only",
+          "parameters": {
+            "mode": "frame-only",
+            "candidateId": "custom-correspondence",
+            "uControlCount": 40,
+            "frameCorrections": {
+              "KNOT": {
+                "angle": -2.7167323306081275,
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "sectionIds": [
+            "K0",
+            "K1",
+            "KNOT",
+            "K3",
+            "K4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 2.263307765740886,
+            "rmsDrift": 1.1802685873024406,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "pointOrderOnly": {
+          "mode": "point-order-only",
+          "parameters": {
+            "mode": "point-order-only",
+            "candidateId": "custom-correspondence",
+            "uControlCount": 40,
+            "pointOrderEdits": {}
+          },
+          "sectionIds": [
+            "K0",
+            "K1",
+            "KNOT",
+            "K3",
+            "K4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 0.000019015304738166027,
+            "rmsDrift": 0.000010035160118653487,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "spacingUniform": null
+      },
+      "evidence": {
+        "entries": [
+          {
+            "seq": 1,
+            "stage": "self-intersection",
+            "event": "baseline_self_intersection",
+            "severity": "info",
+            "intervalIndex": null,
+            "sectionId": null,
+            "twistAmount": null,
+            "sectionResidual": null,
+            "count": 0,
+            "bytes": 182
+          },
+          {
+            "seq": 2,
+            "stage": "correspondence",
+            "event": "abnormal_interval_metric",
+            "severity": "warn",
+            "intervalIndex": 1,
+            "sectionId": "KNOT",
+            "twistAmount": 2.528579,
+            "sectionResidual": 0.42,
+            "abnormal": true,
+            "code": "START_OR_PARAMETER_JUMP",
+            "bytes": 219
+          },
+          {
+            "seq": 3,
+            "stage": "correspondence",
+            "event": "abnormal_interval_metric",
+            "severity": "warn",
+            "intervalIndex": 2,
+            "sectionId": "K3",
+            "twistAmount": 2.5483,
+            "sectionResidual": 0.42,
+            "abnormal": true,
+            "code": "START_OR_PARAMETER_JUMP",
+            "bytes": 215
+          },
+          {
+            "seq": 4,
+            "stage": "frame",
+            "event": "frame_flip_detected",
+            "severity": "warn",
+            "intervalIndex": null,
+            "sectionId": "KNOT",
+            "twistAmount": 2.716732,
+            "sectionResidual": 0,
+            "abnormal": true,
+            "code": "FRAME_AXIS_FLIP",
+            "bytes": 197
+          },
+          {
+            "seq": 5,
+            "stage": "frame",
+            "event": "frame_only_replay",
+            "severity": "warn",
+            "selfIntersectionCount": 0,
+            "assemblyLineDrift": 2.263308,
+            "bytes": 126
+          },
+          {
+            "seq": 6,
+            "stage": "point-order",
+            "event": "point_order_only_replay",
+            "severity": "info",
+            "selfIntersectionCount": 0,
+            "assemblyLineDrift": 0.000019,
+            "bytes": 138
+          },
+          {
+            "seq": 7,
+            "stage": "correspondence.start-parameter",
+            "event": "cause_attributed",
+            "severity": "warn",
+            "intervalIndex": 2,
+            "sectionId": "KNOT",
+            "twistAmount": 2.5483,
+            "sectionResidual": 0.000012,
+            "abnormal": true,
+            "code": "input-correspondence",
+            "bytes": 226
+          }
+        ],
+        "counts": {
+          "debug": 0,
+          "info": 2,
+          "warn": 5,
+          "error": 0
+        },
+        "logCost": {
+          "entryCount": 7,
+          "maxEntries": 160,
+          "estimatedBytes": 1303
+        }
+      }
+    },
+    "frame": {
+      "schema": "loft-twist-diagnostic-replay/v1",
+      "createdAt": "deterministic-record",
+      "diagnosisCause": "frame-flip",
+      "replayStatus": "complete",
+      "diagnosisParameters": {
+        "presetId": "middle-frame-flip",
+        "candidateId": "locked",
+        "orderedIds": [
+          "K0",
+          "K1",
+          "KNOT",
+          "K3",
+          "K4"
+        ],
+        "anchorU": 0.22,
+        "uControlCount": 64,
+        "traceSamples": 72,
+        "replayUControlCount": 40,
+        "thresholds": {
+          "lockTolerance": 0.05,
+          "strongLockMultiple": 2.2,
+          "twistWarn": 0.55,
+          "wave": 0.08
+        },
+        "frameCorrections": {
+          "KNOT": {
+            "angle": 3.141592653589793,
+            "translation": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "pointOrderEdits": {},
+        "vParameters": [
+          0,
+          0.25,
+          0.5,
+          0.75,
+          1
+        ],
+        "historyRevision": null,
+        "taskId": null,
+        "globalFlipApplied": false,
+        "scenario": "middle-frame-flip",
+        "flippedSectionId": "KNOT"
+      },
+      "costs": {
+        "rebuildBySection": {
+          "implementation": "rebuild-correspondence-by-section",
+          "estimatedOperations": 16800,
+          "elapsedMs": 0.001
+        },
+        "trackFrameFlips": {
+          "implementation": "locked-alignment-track-frame-flip",
+          "estimatedOperations": 1392,
+          "elapsedMs": 0.338
+        },
+        "ratio": 12.068965517241379,
+        "selectedImplementation": "locked-alignment-track-frame-flip",
+        "reason": "锁点对应已冻结且残差合格；逐截面全量重建起点/参数代价更高，因此只追踪标架翻面与增量扭转。"
+      },
+      "traceSummary": {
+        "totals": {
+          "maxLockResidualU": 0,
+          "rmsLockResidualU": 0,
+          "maxTwist": 0.1334820802148082,
+          "maxFrameTwistDegrees": 10.230254503237717,
+          "maxCorrespondenceResidual": 0.13329444783715627,
+          "maxParameterResidual": 0,
+          "parameterResidual": 0,
+          "orientationChanges": 0
+        },
+        "maxTwistIndex": 1,
+        "maxLockIndex": 0,
+        "maxWaveIndex": 0
+      },
+      "replays": {
+        "baseline": {
+          "mode": "baseline",
+          "parameters": {
+            "mode": "baseline",
+            "candidateId": "locked",
+            "uControlCount": 40
+          },
+          "sectionIds": [
+            "K0",
+            "K1",
+            "KNOT",
+            "K3",
+            "K4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 0.000008453181069115715,
+            "rmsDrift": 0.000004603340746756283,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "frameOnly": {
+          "mode": "frame-only",
+          "parameters": {
+            "mode": "frame-only",
+            "candidateId": "locked",
+            "uControlCount": 40,
+            "frameCorrections": {
+              "KNOT": {
+                "angle": 3.141592653589793,
+                "translation": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "sectionIds": [
+            "K0",
+            "K1",
+            "KNOT",
+            "K3",
+            "K4"
+          ],
+          "selfIntersectionCount": 192,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 2.1577138685765167,
+            "rmsDrift": 1.1252032706667565,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "pointOrderOnly": {
+          "mode": "point-order-only",
+          "parameters": {
+            "mode": "point-order-only",
+            "candidateId": "locked",
+            "uControlCount": 40,
+            "pointOrderEdits": {}
+          },
+          "sectionIds": [
+            "K0",
+            "K1",
+            "KNOT",
+            "K3",
+            "K4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 0.000008453181069115715,
+            "rmsDrift": 0.000004603340746756283,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "spacingUniform": null
+      },
+      "evidence": {
+        "entries": [
+          {
+            "seq": 1,
+            "stage": "self-intersection",
+            "event": "baseline_self_intersection",
+            "severity": "info",
+            "intervalIndex": null,
+            "sectionId": null,
+            "twistAmount": null,
+            "sectionResidual": null,
+            "count": 0,
+            "bytes": 182
+          },
+          {
+            "seq": 2,
+            "stage": "frame",
+            "event": "frame_flip_detected",
+            "severity": "warn",
+            "intervalIndex": null,
+            "sectionId": "KNOT",
+            "twistAmount": 3.141593,
+            "sectionResidual": 0,
+            "abnormal": true,
+            "code": "FRAME_AXIS_FLIP",
+            "bytes": 197
+          },
+          {
+            "seq": 3,
+            "stage": "frame",
+            "event": "frame_only_replay",
+            "severity": "warn",
+            "selfIntersectionCount": 192,
+            "assemblyLineDrift": 2.157714,
+            "bytes": 128
+          },
+          {
+            "seq": 4,
+            "stage": "point-order",
+            "event": "point_order_only_replay",
+            "severity": "info",
+            "selfIntersectionCount": 0,
+            "assemblyLineDrift": 0.000008,
+            "bytes": 138
+          },
+          {
+            "seq": 5,
+            "stage": "frame",
+            "event": "cause_attributed",
+            "severity": "warn",
+            "intervalIndex": null,
+            "sectionId": "KNOT",
+            "twistAmount": 0.133482,
+            "sectionResidual": 0.000019,
+            "abnormal": true,
+            "code": "frame-flip",
+            "bytes": 196
+          }
+        ],
+        "counts": {
+          "debug": 0,
+          "info": 2,
+          "warn": 3,
+          "error": 0
+        },
+        "logCost": {
+          "entryCount": 5,
+          "maxEntries": 160,
+          "estimatedBytes": 841
+        }
+      }
+    },
+    "spacing": {
+      "schema": "loft-twist-diagnostic-replay/v1",
+      "createdAt": "deterministic-record",
+      "diagnosisCause": "interpolation-ill-conditioning",
+      "replayStatus": "complete",
+      "diagnosisParameters": {
+        "presetId": "closed-uneven-spacing-interpolation",
+        "candidateId": "locked",
+        "orderedIds": [
+          "D0",
+          "D1",
+          "D2",
+          "D3",
+          "D4"
+        ],
+        "anchorU": 0.22,
+        "uControlCount": 64,
+        "traceSamples": 72,
+        "replayUControlCount": 40,
+        "thresholds": {
+          "lockTolerance": 0.05,
+          "strongLockMultiple": 2.2,
+          "twistWarn": 0.55,
+          "wave": 0.08
+        },
+        "frameCorrections": {},
+        "pointOrderEdits": {},
+        "vParameters": [
+          0,
+          0.071661,
+          0.48892,
+          0.556497,
+          1
+        ],
+        "historyRevision": null,
+        "taskId": null,
+        "globalFlipApplied": false,
+        "scenario": "uneven-spacing",
+        "z": [
+          -3,
+          -2.86,
+          -0.12,
+          0.06,
+          3
+        ]
+      },
+      "costs": {
+        "rebuildBySection": {
+          "implementation": "rebuild-correspondence-by-section",
+          "estimatedOperations": 16800,
+          "elapsedMs": 0
+        },
+        "trackFrameFlips": {
+          "implementation": "locked-alignment-track-frame-flip",
+          "estimatedOperations": 1392,
+          "elapsedMs": 0.146
+        },
+        "ratio": 12.068965517241379,
+        "selectedImplementation": "locked-alignment-track-frame-flip",
+        "reason": "锁点对应已冻结且残差合格；逐截面全量重建起点/参数代价更高，因此只追踪标架翻面与增量扭转。"
+      },
+      "traceSummary": {
+        "totals": {
+          "maxLockResidualU": 0,
+          "rmsLockResidualU": 0,
+          "maxTwist": 0.18539090627822702,
+          "maxFrameTwistDegrees": 19.82012305415764,
+          "maxCorrespondenceResidual": 0.18472784261326786,
+          "maxParameterResidual": 0,
+          "parameterResidual": 0,
+          "orientationChanges": 0
+        },
+        "maxTwistIndex": 2,
+        "maxLockIndex": 0,
+        "maxWaveIndex": 3
+      },
+      "replays": {
+        "baseline": {
+          "mode": "baseline",
+          "parameters": {
+            "mode": "baseline",
+            "candidateId": "locked",
+            "uControlCount": 40
+          },
+          "sectionIds": [
+            "D0",
+            "D1",
+            "D2",
+            "D3",
+            "D4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 0.000002703980839953541,
+            "rmsDrift": 0.000001433635099744557,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "frameOnly": {
+          "mode": "frame-only",
+          "parameters": {
+            "mode": "frame-only",
+            "candidateId": "locked",
+            "uControlCount": 40,
+            "frameCorrections": {}
+          },
+          "sectionIds": [
+            "D0",
+            "D1",
+            "D2",
+            "D3",
+            "D4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 0.000002703980839953541,
+            "rmsDrift": 0.000001433635099744557,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "pointOrderOnly": {
+          "mode": "point-order-only",
+          "parameters": {
+            "mode": "point-order-only",
+            "candidateId": "locked",
+            "uControlCount": 40,
+            "pointOrderEdits": {}
+          },
+          "sectionIds": [
+            "D0",
+            "D1",
+            "D2",
+            "D3",
+            "D4"
+          ],
+          "selfIntersectionCount": 0,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 0.000002703980839953541,
+            "rmsDrift": 0.000001433635099744557,
+            "samples": 65
+          },
+          "maxWaviness": null
+        },
+        "spacingUniform": {
+          "mode": "spacing",
+          "parameters": {
+            "mode": "spacing",
+            "candidateId": "locked",
+            "uControlCount": 40,
+            "vParameters": [
+              0,
+              0.25,
+              0.5,
+              0.75,
+              1
+            ]
+          },
+          "sectionIds": [
+            "D0",
+            "D1",
+            "D2",
+            "D3",
+            "D4"
+          ],
+          "selfIntersectionCount": 18,
+          "sampledTriangles": 324,
+          "assemblyLine": {
+            "anchorU": 0.22,
+            "pointCount": 65,
+            "maxDrift": 1.997780098969242,
+            "rmsDrift": 1.261750535084187,
+            "samples": 65
+          },
+          "maxWaviness": 0.10205054361818952,
+          "waviness": [
+            {
+              "index": 0,
+              "vRange": [
+                0,
+                0.25
+              ],
+              "secondDifferenceMax": 0.10824890863845575,
+              "wavinessRms": 0.09983728736086335,
+              "bowMax": 0.9396606652643725,
+              "bowRms": 0.8666431194519473
+            },
+            {
+              "index": 1,
+              "vRange": [
+                0.25,
+                0.5
+              ],
+              "secondDifferenceMax": 0.02177794242262463,
+              "wavinessRms": 0.01993053204402075,
+              "bowMax": 0.1890446390852845,
+              "bowRms": 0.17300809065990316
+            },
+            {
+              "index": 2,
+              "vRange": [
+                0.5,
+                0.75
+              ],
+              "secondDifferenceMax": 0.02107020265021894,
+              "wavinessRms": 0.019190975303712852,
+              "bowMax": 0.182901064672039,
+              "bowRms": 0.1665883272891725
+            },
+            {
+              "index": 3,
+              "vRange": [
+                0.75,
+                1
+              ],
+              "secondDifferenceMax": 0.11012791830156804,
+              "wavinessRms": 0.10205054361818952,
+              "bowMax": 0.955971513034441,
+              "bowRms": 0.8858554133523349
+            }
+          ]
+        }
+      },
+      "evidence": {
+        "entries": [
+          {
+            "seq": 1,
+            "stage": "self-intersection",
+            "event": "baseline_self_intersection",
+            "severity": "info",
+            "intervalIndex": null,
+            "sectionId": null,
+            "twistAmount": null,
+            "sectionResidual": null,
+            "count": 0,
+            "bytes": 182
+          },
+          {
+            "seq": 2,
+            "stage": "frame",
+            "event": "frame_only_replay",
+            "severity": "info",
+            "selfIntersectionCount": 0,
+            "assemblyLineDrift": 0.000003,
+            "bytes": 126
+          },
+          {
+            "seq": 3,
+            "stage": "point-order",
+            "event": "point_order_only_replay",
+            "severity": "info",
+            "selfIntersectionCount": 0,
+            "assemblyLineDrift": 0.000003,
+            "bytes": 138
+          },
+          {
+            "seq": 4,
+            "stage": "spacing",
+            "event": "cause_attributed",
+            "severity": "warn",
+            "intervalIndex": 3,
+            "sectionId": null,
+            "twistAmount": 0.185391,
+            "sectionResidual": 0.00001,
+            "abnormal": true,
+            "code": "interpolation-ill-conditioning",
+            "bytes": 212
+          }
+        ],
+        "counts": {
+          "debug": 0,
+          "info": 3,
+          "warn": 1,
+          "error": 0
+        },
+        "logCost": {
+          "entryCount": 4,
+          "maxEntries": 160,
+          "estimatedBytes": 658
+        }
+      }
+    }
+  }
+}

@@ -150,7 +150,7 @@ function makeMapping(section, mode, options) {
   const prep = prepareSectionGeometry(section);
   const orientation = options.forceRawDirection ? 1 : prep.orientation;
   let offset = 0;
-  if (mode === 'locked' || mode === 'half') {
+  if (mode === 'locked' || mode === 'half' || mode === 'custom') {
     offset = prep.markArc - orientation * ANCHOR_U;
   }
   if (mode === 'half') offset += options.halfShift ?? 0.5;
@@ -181,13 +181,40 @@ export function solveAlignment(sections, options = {}) {
   if (symmetricId) {
     candidateDefs.push({ id: 'symmetry-half', label: '对称歧义：全局错半圈 UV 支（几何等价）', mode: 'half' });
   }
+  const correspondenceOverrides = options.correspondenceOverrides ?? {};
+  const hasCorrespondenceOverrides = Object.keys(correspondenceOverrides).length > 0;
+  if (hasCorrespondenceOverrides) {
+    candidateDefs.push({ id: 'custom-correspondence', label: '视窗拖动/手动截面对应支', mode: 'custom' });
+  }
 
   const candidates = candidateDefs.map((def) => {
-    const mappings = ordered.map((section) => makeMapping(section, def.mode, {
+    let mappings = ordered.map((section) => makeMapping(section, def.mode, {
       ...options,
       halfShift: symmetryShift,
       forceRawDirection: def.forceRawDirection,
     }));
+    if (def.mode === 'custom') {
+      mappings = mappings.map((mapping, i) => {
+        const section = ordered[i];
+        const override = correspondenceOverrides[section.id];
+        if (!override) return { ...mapping, manual: true };
+        const prep = prepareSectionGeometry(section);
+        const orientation = override.orientation ?? mapping.orientation;
+        let offset = mapping.offset;
+        if (override.offset != null) offset = override.offset;
+        else if (override.startU != null) {
+          const startArc = prep.arc.fractionAtRawParameter(0);
+          offset = startArc - orientation * override.startU;
+        }
+        return {
+          ...mapping,
+          orientation,
+          offset: wrap01(offset),
+          manual: true,
+          reason: override.reason ?? 'viewport-correspondence-edit',
+        };
+      });
+    }
     const scores = evaluateCandidate(ordered, mappings, options);
     return {
       id: def.id,

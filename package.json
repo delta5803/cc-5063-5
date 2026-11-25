@@ -9,6 +9,7 @@
     "preview": "vite preview --host 0.0.0.0",
     "test": "node --test test/*.test.js",
     "export:sample": "node scripts/export-sample.mjs",
+    "diagnose:twist": "node scripts/replay-loft-diagnostics.mjs",
     "check:ui": "node scripts/check-ui.mjs"
   },
   "description": "Multi-section parametric loft alignment and texture-branch validation workbench",

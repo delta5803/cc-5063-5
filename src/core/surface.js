@@ -149,12 +149,41 @@ export function buildLoftSurface(sections, alignment, options = {}) {
   const alignedPoints = ordered.map((section, i) => {
     const m = mappings[i];
     const prep = prepareSectionGeometry(section);
+    const correction = options.frameCorrections?.[section.id] ?? null;
     return Array.from({ length: nU }, (_, j) => {
       const u = j / nU;
       const a = wrap01(m.offset + m.orientation * u);
-      return prep.arc.pointAt(a);
+      let p = prep.arc.pointAt(a);
+      if (correction?.angle) {
+        const axis = V.normalize(correction.axis ?? prep.normal);
+        const radius = V.sub(p, prep.centroid);
+        const c = Math.cos(correction.angle);
+        const s = Math.sin(correction.angle);
+        const rotated = V.add(
+          V.scale(radius, c),
+          V.add(V.scale(V.cross(axis, radius), s), V.scale(axis, V.dot(axis, radius) * (1 - c))),
+        );
+        p = V.add(V.add(prep.centroid, rotated), correction.translation ?? [0, 0, 0]);
+      }
+      return p;
     });
   });
+
+  if (options.pointOrderEdits) {
+    ordered.forEach((section, i) => {
+      const edit = options.pointOrderEdits[section.id];
+      if (!edit) return;
+      const row = alignedPoints[i];
+      if (Array.isArray(edit.order)) {
+        alignedPoints[i] = edit.order.map((idx) => row[((idx % nU) + nU) % nU]);
+      } else {
+        const shift = ((Number(edit.shift ?? 0) % nU) + nU) % nU;
+        let next = row.map((_, j) => row[(j - shift + nU) % nU]);
+        if (edit.reverse) next = [...next].reverse();
+        alignedPoints[i] = next;
+      }
+    });
+  }
 
   let sectionControls;
   if (lambdaU > 0) {
