@@ -1,0 +1,242 @@
+{
+  "alignment": {
+    "recommendedId": "locked",
+    "anchorU": 0.22,
+    "candidates": [
+      {
+        "id": "raw-index",
+        "label": "原始数组下标支（不校正起点）",
+        "usable": false,
+        "scores": {
+          "lockError": 0.16356267050096207,
+          "lockRms": 0.09656250409962,
+          "geometric": 0.4992489233437014,
+          "twist": 0.7355574113771887,
+          "fairness": 2.1637241152665214,
+          "total": 1.6169187132936356
+        },
+        "mappings": [
+          {
+            "sectionId": "S0",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S1",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S2",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 3,
+            "sourceKnotCount": 48
+          },
+          {
+            "sectionId": "S3",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S4",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          }
+        ]
+      },
+      {
+        "id": "raw-oriented",
+        "label": "仅统一方向、保留原始起点",
+        "usable": false,
+        "scores": {
+          "lockError": 0.16356267050096207,
+          "lockRms": 0.09656250409962,
+          "geometric": 0.4992489233437014,
+          "twist": 0.7355574113771887,
+          "fairness": 2.1637241152665214,
+          "total": 1.6169187132936356
+        },
+        "mappings": [
+          {
+            "sectionId": "S0",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S1",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S2",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 3,
+            "sourceKnotCount": 48
+          },
+          {
+            "sectionId": "S3",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S4",
+            "offset": 0,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          }
+        ]
+      },
+      {
+        "id": "locked",
+        "label": "锁点/记号对齐支",
+        "usable": true,
+        "scores": {
+          "lockError": 0,
+          "lockRms": 0,
+          "geometric": 0.05175593730970793,
+          "twist": 0.1215519194438034,
+          "fairness": 0.16079551214059384,
+          "total": 0.04921100694621579
+        },
+        "mappings": [
+          {
+            "sectionId": "S0",
+            "offset": 0.9191930079463082,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S1",
+            "offset": 0.015290370949655685,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S2",
+            "offset": 0.8364373294990379,
+            "orientation": 1,
+            "sourceDegree": 3,
+            "sourceKnotCount": 48
+          },
+          {
+            "sectionId": "S3",
+            "offset": 0.9720004680065539,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          },
+          {
+            "sectionId": "S4",
+            "offset": 0.8889986504219707,
+            "orientation": 1,
+            "sourceDegree": 2,
+            "sourceKnotCount": 12
+          }
+        ]
+      }
+    ]
+  },
+  "unwrap": {
+    "alignmentScheme": {
+      "candidateId": "locked",
+      "anchorU": 0.22,
+      "mappings": [
+        {
+          "sectionId": "S0",
+          "offset": 0.9191930079463082,
+          "orientation": 1
+        },
+        {
+          "sectionId": "S1",
+          "offset": 0.015290370949655685,
+          "orientation": 1
+        },
+        {
+          "sectionId": "S2",
+          "offset": 0.8364373294990379,
+          "orientation": 1
+        },
+        {
+          "sectionId": "S3",
+          "offset": 0.9720004680065539,
+          "orientation": 1
+        },
+        {
+          "sectionId": "S4",
+          "offset": 0.8889986504219707,
+          "orientation": 1
+        }
+      ]
+    },
+    "feedback": {
+      "usable": true,
+      "marksCollinear": true,
+      "maxMarkError": 0,
+      "maxLineSpread": 0,
+      "maxJump": 0,
+      "halfTurnSuspected": false,
+      "message": "展开记号全部落在同一条表面线上，并与固定纹理对位锁线重合；纹理支可采用。"
+    },
+    "marks": [
+      {
+        "sectionId": "S0",
+        "lineId": "primary",
+        "label": "手绘对位记号",
+        "u": 0.21999999999999997,
+        "targetU": 0.22,
+        "v": 0
+      },
+      {
+        "sectionId": "S1",
+        "lineId": "primary",
+        "label": "手绘对位记号",
+        "u": 0.21999999999999997,
+        "targetU": 0.22,
+        "v": 0.25
+      },
+      {
+        "sectionId": "S2",
+        "lineId": "primary",
+        "label": "手绘对位记号",
+        "u": 0.21999999999999997,
+        "targetU": 0.22,
+        "v": 0.5
+      },
+      {
+        "sectionId": "S3",
+        "lineId": "primary",
+        "label": "手绘对位记号",
+        "u": 0.21999999999999997,
+        "targetU": 0.22,
+        "v": 0.75
+      },
+      {
+        "sectionId": "S4",
+        "lineId": "primary",
+        "label": "手绘对位记号",
+        "u": 0.21999999999999997,
+        "targetU": 0.22,
+        "v": 1
+      }
+    ]
+  }
+}

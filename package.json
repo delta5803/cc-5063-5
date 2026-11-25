@@ -1,0 +1,22 @@
+{
+  "name": "multisection-lofter",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test test/*.test.js",
+    "export:sample": "node scripts/export-sample.mjs",
+    "check:ui": "node scripts/check-ui.mjs"
+  },
+  "description": "Multi-section parametric loft alignment and texture-branch validation workbench",
+  "dependencies": {
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.65.1",
+    "vite": "^7.3.8"
+  }
+}

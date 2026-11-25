@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>多截面产品外形放样器</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div>
+          <h1>多截面产品外形放样器</h1>
+          <p>显式截面顺序 · 参数对应 · 分支扭转评分 · UV 记号反馈 · 真实张量样条曲面</p>
+        </div>
+        <div class="top-actions">
+          <span id="status-pill" class="pill">待求解</span>
+          <button id="export-obj" type="button">导出 OBJ 模型</button>
+          <button id="export-json" type="button">导出参数曲面 JSON</button>
+        </div>
+      </header>
+
+      <main class="layout">
+        <aside class="panel controls">
+          <section class="card">
+            <h2>输入样例</h2>
+            <select id="preset-select"></select>
+            <p id="preset-description" class="muted"></p>
+          </section>
+
+          <section class="card">
+            <div class="card-title-row">
+              <h2>明确的截面顺序</h2>
+              <button id="reverse-order" class="mini" type="button">反转次序</button>
+            </div>
+            <ol id="section-order" class="section-order"></ol>
+            <button id="insert-symmetric" class="secondary full" type="button">在中点插入二重对称截面</button>
+          </section>
+
+          <section class="card">
+            <h2>对齐方案 / 候选支</h2>
+            <div id="candidate-list" class="candidate-list"></div>
+            <p id="decision-reason" class="reason"></p>
+          </section>
+
+          <section class="card">
+            <h2>光顺与显示设置</h2>
+            <label class="slider-row">
+              <span>横向控制点数 <b id="u-count-value">96</b></span>
+              <input id="u-count" type="range" min="32" max="144" step="8" value="96" />
+            </label>
+            <label class="slider-row">
+              <span>横向光顺 λU <b id="smooth-u-value">0%</b></span>
+              <input id="smooth-u" type="range" min="0" max="100" step="1" value="0" />
+            </label>
+            <label class="slider-row">
+              <span>纵向光顺 λV <b id="smooth-v-value">0%</b></span>
+              <input id="smooth-v" type="range" min="0" max="100" step="1" value="0" />
+            </label>
+            <label class="slider-row">
+              <span>对应线数量 <b id="line-count-value">12</b></span>
+              <input id="line-count" type="range" min="0" max="24" step="1" value="12" />
+            </label>
+            <div class="check-grid">
+              <label><input id="show-texture" type="checkbox" checked /> 贴纹理</label>
+              <label><input id="show-lines" type="checkbox" checked /> 对应线</label>
+              <label><input id="show-normals" type="checkbox" /> 法线</label>
+              <label><input id="show-wire" type="checkbox" /> 网格线</label>
+            </div>
+          </section>
+        </aside>
+
+        <section class="viewport card">
+          <div id="three-container"></div>
+          <div class="viewport-hint">拖拽旋转 · 滚轮缩放 · 右键平移</div>
+          <div id="viewer-message" class="viewer-message"></div>
+          <div id="viewer-badges" class="badges"></div>
+        </section>
+
+        <aside class="panel inspector">
+          <section class="card">
+            <h2>纹理展开器反馈</h2>
+            <div class="unwrap-wrap">
+              <canvas id="unwrap-canvas" width="720" height="380"></canvas>
+            </div>
+            <div id="unwrap-feedback" class="feedback"></div>
+          </section>
+
+          <section class="card">
+            <h2>插值与连续性检验</h2>
+            <div id="metrics" class="metrics"></div>
+          </section>
+
+          <section class="card">
+            <h2>次数 / 节点 / 方向兼容化</h2>
+            <p class="muted" style="margin-top:0">先按弧长参数求值，再统一重建为 p=3 周期均匀节点；对应使用 offset/orientation，不按原始数组下标直连。</p>
+            <div class="table-wrap">
+              <table id="compatibility-table">
+                <thead>
+                  <tr><th>截面</th><th>源次数</th><th>节点</th><th>方向</th><th>offset</th></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="card">
+            <h2>送往展开器的 Alignment Scheme</h2>
+            <pre id="alignment-json" class="json"></pre>
+          </section>
+        </aside>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
